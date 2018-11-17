@@ -18,4 +18,14 @@
       </tr>
     <% end %>
   </tbody>
+
+  <tbody>
+    <% @skills.each do |skill| %>
+      <tr>
+        <td><%= skill.title %></td>
+        <td><%= skill.percent_utilized %></td>
+        
+      </tr>
+    <% end %>
+  </tbody>
 </table>
